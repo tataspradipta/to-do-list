@@ -1,5 +1,5 @@
 body {
-    background-color: #49B749;
+    background-color: #d60b0b;
     font-family: "HelveticaNeue Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
 }
 
@@ -33,6 +33,15 @@ body {
     transition: all 0.5s ease-out;
 }
 
+.todo-wrapper ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
 .todo-wrapper form {
     display: inline-block;
 }
@@ -56,4 +65,29 @@ body {
     text-align: center;
     display: inline-block;
     font-size: small;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+    background-color: #49B749;
+}
+
+.todo-wrapper #empty-button {
+    background-color: #9B1C20;
+}
+
+.todo-wrapper #save-button {
+    background-color: #49B749;
+}
+
+@media screen and (min-width:1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
 }
